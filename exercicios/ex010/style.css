@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,900&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    transition: .3s;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px  ;
+    background-color: rgb(162, 210, 194);
+    height: 75px;
+    position: fixed; /* <-- aqui */
+    top: 0;           /* <-- aqui */
+    width: 100%;      /* <-- aqui */
+    z-index: 1000;  
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(105, 3, 200);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.132) 0px 3px 6px;
+}
+
+header h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav{
+    padding: 0 12px;
+}
+
+nav a{
+    display: inline-block;
+    color: rgb(105, 3, 200);
+    text-decoration: none;
+    font-family: Inter;
+    border-right: 2px solid rgb(0, 0, 0);
+    padding: 5px 12px;
+    border-radius: 2.5px;
+}
+
+nav a:active{
+    transition: .1s;
+    box-shadow: inset -2px 2px 6px black;
+    color: rgb(234, 255, 248);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a:hover{
+    background-color: rgb(131, 178, 162); 
+    color: white;
+    transform: scale(1.09);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 3px;
+    margin-top: 100px;
+}
+#secao{
+    flex: 1;
+    padding: 1px;
+    margin-bottom: 30px;
+}
+
+article{
+    margin: 15px 0px 25px 0px;
+    padding: 0px 4px;
+}
+
+section article{
+    display: flex;
+}
+
+aside{
+    width: 300px;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+#side-bar-left{
+    margin: 0px 5px 0px 0px;
+}
+
+#side-bar-right{
+    margin: 0px 0px 0px 5px;
+}
+
+#text-secao{
+    text-align: center;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+footer{
+    padding: 3px;
+}
+
+@media screen and (max-width: 1350px){
+    aside{
+        display: none;
+    }
+    main {
+    flex-direction: column;
+    padding: 0px 6px 0px 2px;
+   }
+
+   #secao {
+   width: 100%;
+   }
+
+   article{
+    padding: 0px 2px 0px 3px;
+   }
+
+   body{
+    font-size: 75%;
+   }
+
+   header nav ul{
+    display: none;
+   }
+
+}
+   @media screen and (max-height: 450px){
+    header{
+        height: 62px;
+    }
+   }

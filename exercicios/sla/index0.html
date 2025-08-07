@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproduzir Áudio</title>
+</head>
+<body>
+
+
+  <p onclick="tocarAudio()">Clique aqui para ouvir</p>
+
+  
+  <img src="imagens/foto-p.png" alt="Imagem" onclick="tocarAudio()" style="width:200px;cursor:pointer;">
+
+  
+  <audio id="meuAudio" src="audios/myinstants.mp3"></audio>
+
+  <script>
+    function tocarAudio() {
+      const audio = document.getElementById("meuAudio");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
