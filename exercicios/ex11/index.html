@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste imagens</title>
+
+    <style>
+        body{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            padding-top: 20px;
+            gap: 20px;
+            background-image: url('images/wallpaper002.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+        }
+
+        div.quadrado{
+            background-color: lightgray;
+            border: 2px solid black;
+            border-radius: 5px;
+            min-width: 200px;
+            max-width: 300px;
+            height: 30vw; 
+            max-height: 300px;
+            min-height: 200px;
+            flex: 1 1 250px;
+        }
+
+        div.quadrado:nth-child(1){
+            background-color: lightblue;
+        }
+        div.quadrado:nth-child(2){
+            background-image: linear-gradient(to bottom, yellow, orange);
+            background-size: cover;
+        }
+        div.quadrado:nth-child(3){
+            background-image: url('images/wallpaper001.jpg');
+            background-size: cover;
+        }
+
+    </style>
 </head>
 <body>
+
+        <div class="quadrado">
+
+        </div>
+        <div class="quadrado">
+
+        </div>
+        <div class="quadrado">
+
+        </div>
     
 </body>
 </html>
